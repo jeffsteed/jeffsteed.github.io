@@ -25,4 +25,14 @@ General Assembly - WDI-Chicago-Dragons!
 - Little spoon
 - Fetal
 
+#### In Table Form
+  Foods  |  Sleep
+-------- | --------
+Pizza | On Belly
+Cheese Burger | On Side
+Chocolate | On Back
+Burrito | Big Spoon
+Orange Chicken | Little Spoon
+Pasta | Fetal
+
 ([http://jeffsteed.github.io])
