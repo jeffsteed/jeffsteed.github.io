@@ -8,7 +8,9 @@
 ![Image of a dragon]
 (http://www.iconsdownload.net/icons/512/1070-dragon-symbol-of-japan-vector.png)
 ```
-General Assembly - WDI-Chicago-Dragons!``` :dragon:
+General Assembly - WDI-Chicago-Dragons!
+```
+:dragon:
 >#### Some of my favorite foods-
 1. Pizza
 2. Cheese Burgers
@@ -23,7 +25,7 @@ General Assembly - WDI-Chicago-Dragons!``` :dragon:
 - Big spoon
 - Little spoon
 - Fetal
-
+:dragon:
 #### In Table Form
    Foods   |    Sleep   
 ---------- | ----------
@@ -34,4 +36,4 @@ Burrito | Big Spoon
 Orange Chicken | Little Spoon
 Pasta | Fetal
 
-([http://jeffsteed.github.io])
+:dragon:([http://jeffsteed.github.io])
