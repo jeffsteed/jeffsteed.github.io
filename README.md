@@ -5,6 +5,7 @@
 
 > This site contains just a few brief facts about me.
 
+![Image of a dragon]
 (http://www.iconsdownload.net/icons/512/1070-dragon-symbol-of-japan-vector.png)
 
 ```
