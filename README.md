@@ -26,8 +26,8 @@ General Assembly - WDI-Chicago-Dragons!
 - Fetal
 
 #### In Table Form
-  Foods  |   Sleep   
--------- | --------
+   Foods   |    Sleep   
+---------- | ----------
 Pizza | On Belly
 Cheese Burger | On Side
 Chocolate | On Back
