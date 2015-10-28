@@ -1,0 +1,108 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: arial, sans-serif;
+}
+
+.one {
+  width: 100%;
+  height: 250px;
+  background-color: aquamarine;
+}
+
+#name {
+  margin: 0;
+  padding-top: 5%;
+  padding-left: 15%;
+  color: white;
+  font-size: 6em;
+  text-shadow: 2px 2px #ff0000;
+  float: left;
+}
+
+h2 {
+  margin: 0;
+  padding-left: 50%;
+  padding-top: 2%;
+  text-shadow: 2px 2px #ff0000;
+  font-size: 4em;
+  color: aquamarine;
+}
+
+h3 {
+  padding-top: 5%;
+  padding-left: 2%;
+  color: white;
+  text-shadow: 1px 1px #ff0000;
+  float: left;
+}
+
+.three {
+  height: 705px;
+  width: 100%;
+  background-color: coral;
+}
+
+#me {
+  border-radius: 12%;
+  float: left;
+  margin-top: 2%;
+  margin-left: 10%;
+  border: 20px solid coral;
+}
+
+#about {
+  background-color: white;
+  margin: 2% auto;
+  width: 1800px;
+  height: 500px;
+  border-radius: 16px;
+  color: #999;
+}
+
+p {
+  margin: 0;
+  padding: 2%;
+  font-size: 2em;
+}
+
+#osu {
+  float: right;
+  width: 100px;
+  height: 100px;
+}
+
+.social {
+  width: 200px;
+  margin: 0 auto;
+}
+
+/**************************************************/
+/*         Responsive for smaller screens         */
+/**************************************************/
+
+@media screen and (max-width: 980px) {
+
+  img {
+    margin-left: 2%;
+  }
+
+  #name, h3 {
+    float: none;
+    text-align: center;
+  }
+
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+
+  #about {
+    width: 900px;
+    height: 550px;
+  }
+
+  .three {
+    height: 683px;
+  }
+}
