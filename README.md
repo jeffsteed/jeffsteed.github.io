@@ -28,9 +28,9 @@ General Assembly - WDI-Chicago-Dragons!
 #### In Table Form
    Foods   |    Sleep   
 ---------- | ----------
-Pizza | On Belly
-Cheese Burger | On Side
-Chocolate | On Back
+Pizza | On My Belly
+Cheese Burger | On My Side
+Chocolate | On My Back
 Burrito | Big Spoon
 Orange Chicken | Little Spoon
 Pasta | Fetal
