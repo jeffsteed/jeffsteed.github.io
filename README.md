@@ -8,8 +8,7 @@
 ![Image of a dragon]
 (http://www.iconsdownload.net/icons/512/1070-dragon-symbol-of-japan-vector.png)
 ```
-General Assembly - WDI-Chicago-Dragons!
-```
+General Assembly - WDI-Chicago-Dragons!``` :dragon:
 >#### Some of my favorite foods-
 1. Pizza
 2. Cheese Burgers
