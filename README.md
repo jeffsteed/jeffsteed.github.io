@@ -18,6 +18,7 @@ General Assembly - WDI-Chicago-Dragons!
 
 #### Some of my favorite sleeping positions-
 - On my belly
+1.  Stomach
 - On my side
 - On my back
 - Big spoon
