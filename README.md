@@ -10,7 +10,7 @@
 ```
 General Assembly - WDI-Chicago-Dragons!
 ```
-:dragon:
+:dragon: :octocat:
 >#### Some of my favorite foods-
 1. Pizza
 2. Cheese Burgers
