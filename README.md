@@ -25,7 +25,7 @@ General Assembly - WDI-Chicago-Dragons!
 - Big spoon
 - Little spoon
 - Fetal
-:dragon:
+
 #### In Table Form
    Foods   |    Sleep   
 ---------- | ----------
@@ -36,4 +36,4 @@ Burrito | Big Spoon
 Orange Chicken | Little Spoon
 Pasta | Fetal
 
-:dragon:([http://jeffsteed.github.io])
+:dragon:([http://jeffsteed.github.io]):dragon:
