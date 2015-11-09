@@ -1,0 +1,43 @@
+$logoFont: 'Shojumaru', cursive;
+
+body {
+  background-image: url('http://vector-magz.com/wp-content/uploads/2013/03/Japanese-Dragon-Vector.png');
+  // background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#wrapper {
+  height: 780px;
+}
+
+#logo {
+  background-color: coral;
+  height: 80px;
+  color: white;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  font-weight: bolder;
+  box-shadow: 5px 5px 5px black;
+  opacity: 0.8;
+  font-family: $logoFont;
+}
+
+.divider {
+  height: 40px;
+}
+
+#playSpace {
+  background-color: rgba(255, 127, 80, 0.9);;
+  height: 540px;
+  // opacity: 0.9;
+  border-radius: 10px;
+  box-shadow: 5px 10px 10px black;
+}
+
+#gameboard {
+  height: 280px;
+  background-color: aliceblue;
+  // margin: 0 auto;
+  border-radius: 10px;
+}
