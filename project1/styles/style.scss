@@ -1,6 +1,6 @@
 $logoFont: 'Shojumaru', cursive;
 $backgroundColor: rgba(4, 163, 178, 0.9);
-$foregroundColor: rgba(178, 30, 114, 0.9);
+$foregroundColor: rgba(255, 18, 152, 0.9);
 
 $radius: 15px;
 
@@ -18,7 +18,7 @@ body {
 #logo {
   background-color: $backgroundColor;
   height: 80px;
-  color: white;
+  color: rgb(255, 228, 51);
   text-align: center;
   border-radius: 0 0 15px 15px;
   font-weight: bolder;
@@ -44,4 +44,25 @@ body {
   background-color: $foregroundColor;
   // margin: 0 auto;
   border-radius: $radius;
+}
+
+#diceholder {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.dice {
+  height: 50%;
+  background: white;
+  border-radius: 20px;
+  margin-top: 2%;
+  margin: 1.6%;
+}
+
+#scoreboard {
+  background: rgb(255, 228, 51);
+  height: 200px;
+  border-radius: $radius;
+  margin-top: 0.8%;
 }
