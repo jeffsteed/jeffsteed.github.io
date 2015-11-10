@@ -16,7 +16,8 @@ body {
   border-radius: 0 0 15px 15px;
   font-weight: bolder;
   box-shadow: 5px 5px 5px black;
-  font-family: "Shojumaru", cursive; }
+  font-family: "Shojumaru", cursive;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15); }
 
 .divider {
   height: 40px; }
@@ -30,7 +31,8 @@ body {
 #gameboard {
   height: 280px;
   background-color: rgba(255, 18, 152, 0.8);
-  border-radius: 15px; }
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px black; }
 
 #diceholder {
   height: 100%;
@@ -39,17 +41,21 @@ body {
 
 .dice {
   height: 50%;
-  background: white;
+  background: antiquewhite;
   border-radius: 20px;
   margin-top: 2%;
-  margin: 1.66%; }
+  margin: 1.66%;
+  border: 4px solid antiquewhite;
+  box-shadow: 0 5px 5px black; }
 
 #scoreboard {
   background: #ffe433;
   height: 200px;
   border-radius: 15px;
-  margin-top: 0.8%;
-  color: #6b12a7; }
+  margin-top: 1%;
+  color: #04a3b2;
+  box-shadow: 5px 5px 5px black;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); }
 
 #playerTwo, #playerTwoScore {
   color: rgba(255, 18, 152, 0.8); }
@@ -57,9 +63,12 @@ body {
 #messageBoard {
   text-align: center;
   background: #6b12a7;
+  background: #23bdcc;
   border-radius: 15px;
-  margin-top: 0.8%;
+  margin-top: 1%;
   height: 200px;
-  color: #ffe433; }
+  color: #ffe433;
+  box-shadow: 5px 5px 5px black;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=style.css.map */
