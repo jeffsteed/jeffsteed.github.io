@@ -7,11 +7,11 @@ body {
   height: 780px; }
 
 #logo {
-  background-color: coral;
+  background-color: rgba(4, 163, 178, 0.9);
   height: 80px;
   color: white;
   text-align: center;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 15px 15px;
   font-weight: bolder;
   box-shadow: 5px 5px 5px black;
   opacity: 0.8;
@@ -21,14 +21,14 @@ body {
   height: 40px; }
 
 #playSpace {
-  background-color: rgba(255, 127, 80, 0.9);
+  background-color: rgba(4, 163, 178, 0.9);
   height: 540px;
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 5px 10px 10px black; }
 
 #gameboard {
   height: 280px;
-  background-color: aliceblue;
-  border-radius: 10px; }
+  background-color: rgba(178, 30, 114, 0.9);
+  border-radius: 15px; }
 
 /*# sourceMappingURL=style.css.map */
