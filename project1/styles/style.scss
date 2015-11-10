@@ -1,6 +1,6 @@
 $logoFont: 'Shojumaru', cursive;
-$backgroundColor: rgba(4, 163, 178, 0.9);
-$foregroundColor: rgba(255, 18, 152, 0.9);
+$backgroundColor: rgba(4, 163, 178, 0.95);
+$foregroundColor: rgba(255, 18, 152, 0.95);
 
 $radius: 15px;
 
@@ -9,6 +9,7 @@ body {
   // background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: $logoFont;
 }
 
 #wrapper {
@@ -57,7 +58,7 @@ body {
   background: white;
   border-radius: 20px;
   margin-top: 2%;
-  margin: 1.6%;
+  margin: 1.66%;
 }
 
 #scoreboard {
@@ -65,4 +66,5 @@ body {
   height: 200px;
   border-radius: $radius;
   margin-top: 0.8%;
+  color: $foregroundColor;
 }

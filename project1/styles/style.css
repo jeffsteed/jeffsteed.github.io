@@ -1,13 +1,14 @@
 body {
   background-image: url("http://vector-magz.com/wp-content/uploads/2013/03/Japanese-Dragon-Vector.png");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  font-family: "Shojumaru", cursive; }
 
 #wrapper {
   height: 780px; }
 
 #logo {
-  background-color: rgba(4, 163, 178, 0.9);
+  background-color: rgba(4, 163, 178, 0.95);
   height: 80px;
   color: #ffe433;
   text-align: center;
@@ -21,14 +22,14 @@ body {
   height: 40px; }
 
 #playSpace {
-  background-color: rgba(4, 163, 178, 0.9);
+  background-color: rgba(4, 163, 178, 0.95);
   height: 540px;
   border-radius: 15px;
   box-shadow: 5px 10px 10px black; }
 
 #gameboard {
   height: 280px;
-  background-color: rgba(255, 18, 152, 0.9);
+  background-color: rgba(255, 18, 152, 0.95);
   border-radius: 15px; }
 
 #diceholder {
@@ -41,12 +42,13 @@ body {
   background: white;
   border-radius: 20px;
   margin-top: 2%;
-  margin: 1.6%; }
+  margin: 1.66%; }
 
 #scoreboard {
   background: #ffe433;
   height: 200px;
   border-radius: 15px;
-  margin-top: 0.8%; }
+  margin-top: 0.8%;
+  color: rgba(255, 18, 152, 0.95); }
 
 /*# sourceMappingURL=style.css.map */
