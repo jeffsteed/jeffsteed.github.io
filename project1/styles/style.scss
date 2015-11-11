@@ -5,7 +5,6 @@ $foregroundColor: rgba(255, 18, 152, 0.8);
 $radius: 15px;
 
 body {
-  // background-image: url('http://vector-magz.com/wp-content/uploads/2013/03/Japanese-Dragon-Vector.png');
   background: linear-gradient(
     rgba(0, 0, 0, 0.45),
     rgba(0, 0, 0, 0.45)), url('http://img11.deviantart.net/9ce1/i/2005/200/8/2/yakuza_irezumi_by_kyodai.png');
@@ -47,18 +46,13 @@ body {
 }
 
 #playSpace {
-  // background-color: $backgroundColor;
   height: 560px;
-  // opacity: 0.9;
   border-radius: $radius;
-  // box-shadow: 5px 10px 10px black;
 }
 
 #gameboard {
   height: 280px;
   background-color: $foregroundColor;
-  // margin: 0 auto;
-  // border-radius: $radius;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -131,27 +125,29 @@ body {
   background-position: center;
 }
 
+.number {
+  color: rgb(35, 189, 204);
+  margin: 0 1.66% 0 1.66%;
+  text-align: center;
+}
+
 #scoreboard {
   background: rgba(35, 189, 204, 0.9);
   height: 200px;
-  // border-radius: $radius;
-  // margin-top: 1%;
   color: $foregroundColor;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-// #playerTwo, #playerTwoScore {
-//   color: rgb(4, 163, 178);
-// }
-
 #messageBoard {
   text-align: center;
   background: rgba(4, 163, 178, 0.9);
-  // border-radius: $radius;
-  // margin-top: 1%;
   height: 200px;
   color: rgb(255, 228, 51);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#messageBoard h3 {
+  margin-top: 5%;
 }

@@ -87,6 +87,11 @@ body {
   background-repeat: no-repeat;
   background-position: center; }
 
+.number {
+  color: #23bdcc;
+  margin: 0 1.66% 0 1.66%;
+  text-align: center; }
+
 #scoreboard {
   background: rgba(35, 189, 204, 0.9);
   height: 200px;
@@ -101,5 +106,8 @@ body {
   color: #ffe433;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); }
+
+#messageBoard h3 {
+  margin-top: 5%; }
 
 /*# sourceMappingURL=style.css.map */
