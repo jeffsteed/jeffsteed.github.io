@@ -55,10 +55,10 @@ var dice = {
     }
   },
 
-  // This function checks the game state each turn
-  takeTurn: function() {
-
-  },
+  // // This function checks the game state each turn
+  // takeTurn: function() {
+  //
+  // },
 
   // Rolls all dice that have not been selected
   diceRoll: function() {

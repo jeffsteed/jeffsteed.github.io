@@ -46,7 +46,7 @@ body {
 }
 
 #playSpace {
-  height: 560px;
+  height: 540px;
   border-radius: $radius;
 }
 
@@ -89,6 +89,9 @@ body {
 #roll-dice {
   margin: 0 auto;
   text-align: center;
+  height: 60px;
+  width: 200px;
+  background-color: $foregroundColor;
 }
 
 .selected {

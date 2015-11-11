@@ -23,7 +23,7 @@ body {
   height: 30px; }
 
 #playSpace {
-  height: 560px;
+  height: 540px;
   border-radius: 15px; }
 
 #gameboard {
@@ -57,7 +57,10 @@ body {
 
 #roll-dice {
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  height: 60px;
+  width: 200px;
+  background-color: rgba(255, 18, 152, 0.8); }
 
 .selected {
   border: 20px solid #ffe433; }
