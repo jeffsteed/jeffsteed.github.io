@@ -86,40 +86,46 @@ body {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
+.dice:active {
+  -moz-box-shadow:    inset 0 0 20px #000000;
+  -webkit-box-shadow: inset 0 0 20px #000000;
+  box-shadow:         inset 0 0 20px #000000;
+}
+
 #roll-dice {
   margin: 0 auto;
   text-align: center;
 }
 
 .selected {
-
+  border: 20px solid rgb(255, 228, 51);
 }
 
-#diceOne {
+#dice1 {
   background-image: url('http://www.booksandwands.com/images/ChineseOne.bmp');
   background-repeat: no-repeat;
   background-position: center;
 }
 
-#diceTwo {
+#dice2 {
   background-image: url('http://www.booksandwands.com/images/ChineseTwo.bmp');
   background-repeat: no-repeat;
   background-position: center;
 }
 
-#diceThree {
+#dice3 {
   background-image: url('http://www.booksandwands.com/images/ChineseThree.bmp');
   background-repeat: no-repeat;
   background-position: center;
 }
 
-#diceFour {
+#dice4 {
   background-image: url('http://www.booksandwands.com/images/ChineseFour.bmp');
   background-repeat: no-repeat;
   background-position: center;
 }
 
-#diceFive {
+#dice5 {
   background-image: url('http://www.booksandwands.com/images/ChineseFive.bmp');
   background-repeat: no-repeat;
   background-position: center;
