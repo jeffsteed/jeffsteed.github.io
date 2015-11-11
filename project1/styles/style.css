@@ -38,11 +38,36 @@ body {
 
 .dice {
   height: 50%;
-  background: antiquewhite;
+  background-color: white;
   border-radius: 20px;
   margin-top: 2%;
   margin: 1.66%;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); }
+
+#diceOne {
+  background-image: url("http://www.booksandwands.com/images/ChineseOne.bmp");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+#diceTwo {
+  background-image: url("http://www.booksandwands.com/images/ChineseTwo.bmp");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+#diceThree {
+  background-image: url("http://www.booksandwands.com/images/ChineseThree.bmp");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+#diceFour {
+  background-image: url("http://www.booksandwands.com/images/ChineseFour.bmp");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+#diceFive {
+  background-image: url("http://www.booksandwands.com/images/ChineseFive.bmp");
+  background-repeat: no-repeat;
+  background-position: center; }
 
 #scoreboard {
   background: rgba(35, 189, 204, 0.9);
