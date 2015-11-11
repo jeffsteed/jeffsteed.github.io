@@ -68,14 +68,27 @@ body {
   margin: 0 auto;
 }
 
+#diceRow {
+  height: 180px;
+}
+
+#numRow {
+  height: 100px;
+}
+
 .dice {
-  height: 50%;
+  height: 80%;
   // background: rgb(250, 235, 215);
   background-color: white;
   border-radius: 20px;
   margin-top: 2%;
   margin: 1.66%;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#roll-dice {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .selected {

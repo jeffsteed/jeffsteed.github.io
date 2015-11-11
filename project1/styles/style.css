@@ -36,13 +36,23 @@ body {
   width: 100%;
   margin: 0 auto; }
 
+#diceRow {
+  height: 180px; }
+
+#numRow {
+  height: 100px; }
+
 .dice {
-  height: 50%;
+  height: 80%;
   background-color: white;
   border-radius: 20px;
   margin-top: 2%;
   margin: 1.66%;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); }
+
+#roll-dice {
+  margin: 0 auto;
+  text-align: center; }
 
 #diceOne {
   background-image: url("http://www.booksandwands.com/images/ChineseOne.bmp");
