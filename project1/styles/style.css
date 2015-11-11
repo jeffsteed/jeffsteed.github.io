@@ -9,13 +9,13 @@ body {
   height: 780px; }
 
 #logo {
-  background-color: rgba(4, 163, 178, 0.8);
+  background-color: rgba(4, 163, 178, 0.9);
   height: 80px;
   color: #ffe433;
   text-align: center;
   border-radius: 0 0 15px 15px;
   font-weight: bolder;
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   font-family: "Shojumaru", cursive;
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15); }
 
@@ -29,8 +29,7 @@ body {
 #gameboard {
   height: 280px;
   background-color: rgba(255, 18, 152, 0.8);
-  border-radius: 15px;
-  box-shadow: 5px 5px 5px black; }
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); }
 
 #diceholder {
   height: 100%;
@@ -43,29 +42,21 @@ body {
   border-radius: 20px;
   margin-top: 2%;
   margin: 1.66%;
-  box-shadow: 0 5px 5px black; }
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); }
 
 #scoreboard {
-  background: #ffe433;
+  background: rgba(35, 189, 204, 0.9);
   height: 200px;
-  border-radius: 15px;
-  margin-top: 1%;
-  color: #04a3b2;
-  box-shadow: 5px 5px 5px black;
+  color: rgba(255, 18, 152, 0.8);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); }
-
-#playerTwo, #playerTwoScore {
-  color: rgba(255, 18, 152, 0.8); }
 
 #messageBoard {
   text-align: center;
-  background: #6b12a7;
-  background: #23bdcc;
-  border-radius: 15px;
-  margin-top: 1%;
+  background: rgba(4, 163, 178, 0.9);
   height: 200px;
   color: #ffe433;
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=style.css.map */

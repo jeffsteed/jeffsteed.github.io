@@ -1,5 +1,5 @@
 $logoFont: 'Shojumaru', cursive;
-$backgroundColor: rgba(4, 163, 178, 0.8);
+$backgroundColor: rgba(4, 163, 178, 0.9);
 $foregroundColor: rgba(255, 18, 152, 0.8);
 
 $radius: 15px;
@@ -26,7 +26,7 @@ body {
   text-align: center;
   border-radius: 0 0 15px 15px;
   font-weight: bolder;
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   font-family: $logoFont;
   text-shadow: 0 1px 0 #ccc,
                0 2px 0 #c9c9c9,
@@ -58,8 +58,8 @@ body {
   height: 280px;
   background-color: $foregroundColor;
   // margin: 0 auto;
-  border-radius: $radius;
-  box-shadow: 5px 5px 5px black;
+  // border-radius: $radius;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 #diceholder {
@@ -74,31 +74,34 @@ body {
   border-radius: 20px;
   margin-top: 2%;
   margin: 1.66%;
-  box-shadow: 0 5px 5px black;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.selected {
+
 }
 
 #scoreboard {
-  background: rgb(255, 228, 51);
+  background: rgba(35, 189, 204, 0.9);
   height: 200px;
-  border-radius: $radius;
-  margin-top: 1%;
-  color: rgb(4, 163, 178);
-  box-shadow: 5px 5px 5px black;
+  // border-radius: $radius;
+  // margin-top: 1%;
+  color: $foregroundColor;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-#playerTwo, #playerTwoScore {
-  color: $foregroundColor;
-}
+// #playerTwo, #playerTwoScore {
+//   color: rgb(4, 163, 178);
+// }
 
 #messageBoard {
   text-align: center;
-  background: rgb(107, 18, 167);
-  background: rgb(35, 189, 204);
-  border-radius: $radius;
-  margin-top: 1%;
+  background: rgba(4, 163, 178, 0.9);
+  // border-radius: $radius;
+  // margin-top: 1%;
   height: 200px;
   color: rgb(255, 228, 51);
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
