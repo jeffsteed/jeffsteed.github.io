@@ -167,6 +167,7 @@ function endTurn() {
     document.getElementById('playerOneScore').innerHTML = "<h1>" + player1Score + "</h1>";
     setPlayer();
     resetBoard();
+    dice.diceRolled = false;
   } else {
     player2Score += calculateScore();
     document.getElementById('playerTwoScore').innerHTML = "<h1>" + player2Score + "</h1>";
@@ -174,6 +175,7 @@ function endTurn() {
     checkRound();
     resetBoard();
     round++;
+    dice.diceRolled = false;
   }
   console.log("Player has ended their turn and submitted their dice to be scored.");
 };
