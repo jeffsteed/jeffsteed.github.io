@@ -228,12 +228,26 @@ function calculateScore() {
     count++;
   }
 
-  if (matches == 5) {
+  if (tally['1'] == 1 && tally['2'] == 1 && tally['3'] == 1 && tally['4'] == 1 && tally['5'] == 1) {
+    return 40;
+  } else if (matches == 5) {
     return 100;
   } else if (matches == 4) {
     return 30;
   } else if (matches == 3) {
-    return 20;
+    var inc   = 0,
+        pair  = false;
+    while (inc < 5) {
+      if (tally[(inc + 1).toString()] == 2) {
+        pair = true;
+      }
+      inc++;
+    }
+    if (pair) {
+      return 50;
+    } else {
+      return 20;
+    }
   } else if (matches == 2) {
     return 10;
   } else {
