@@ -154,4 +154,13 @@ body {
   color: #ffe433;
   margin-top: 20%; }
 
+#play {
+  margin: 0 auto;
+  text-align: center;
+  height: 60px;
+  width: 200px;
+  background-color: rgba(4, 163, 178, 0.9);
+  color: #ffe433;
+  border: 2px solid #ffe433; }
+
 /*# sourceMappingURL=style.css.map */

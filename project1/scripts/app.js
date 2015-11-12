@@ -1,10 +1,7 @@
 window.onload = function() {
   console.log("Window has loaded.");
-  // dice.diceRoll();
 
-
-
-  gameReady();
+  play();
 
 };
 
@@ -132,7 +129,19 @@ var dice = {
 };
 
 function play() {
-
+  var cover = document.createElement('div');
+  cover.innerHTML = "<h1>Welcome to<br>Yakuz-ee!</h1>";
+  cover.className = 'final';
+  var btn = document.createElement('button');
+  btn.className = "btn btn-default";
+  btn.id = "play";
+  btn.innerText = "PLAY!";
+  cover.appendChild(btn);
+  document.getElementsByTagName('body')[0].appendChild(cover);
+  btn.addEventListener('click', function() {
+    cover.style.display = "none";
+    gameReady();
+  });
 };
 
 function gameReady() {
@@ -167,7 +176,6 @@ function endTurn() {
     document.getElementById('playerOneScore').innerHTML = "<h1>" + player1Score + "</h1>";
     setPlayer();
     resetBoard();
-    dice.diceRolled = false;
   } else {
     player2Score += calculateScore();
     document.getElementById('playerTwoScore').innerHTML = "<h1>" + player2Score + "</h1>";
@@ -175,7 +183,6 @@ function endTurn() {
     checkRound();
     resetBoard();
     round++;
-    dice.diceRolled = false;
   }
   console.log("Player has ended their turn and submitted their dice to be scored.");
 };
