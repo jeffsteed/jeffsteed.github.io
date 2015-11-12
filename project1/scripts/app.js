@@ -1,24 +1,26 @@
 window.onload = function() {
   console.log("Window has loaded.");
   // dice.diceRoll();
-  dice.setDiceEventListeners();
-  document.getElementById('messageBoard').innerHTML = "<h3>Player One, please roll the dice</h3>";
 
-  readyGame();
+
+
+  gameReady();
 
 };
 
-var turns = 1;
+var turns = 0;
 var round = 1;
 var currentPlayer = 'Player One';
+var player1Score = 0;
+var player2Score = 0;
 var diceArray = ['dice1', 'dice2', 'dice3', 'dice4', 'dice5'];
 
 var diceImgs = {
-  one: 'images/ChineseOne.bmp',
-  two: 'images/ChineseTwo.bmp',
-  three: 'images/ChineseThree.bmp',
-  four: 'images/ChineseFour.bmp',
-  five: 'images/ChineseFive.bmp'
+  img1: 'images/ChineseOne.bmp',
+  img2: 'images/ChineseTwo.bmp',
+  img3: 'images/ChineseThree.bmp',
+  img4: 'images/ChineseFour.bmp',
+  img5: 'images/ChineseFive.bmp'
 }
 
 var dice = {
@@ -39,6 +41,7 @@ var dice = {
   dice3Value: null,
   dice4Value: null,
   dice5Value: null,
+  diceRolled: false,
 
   // Function to identify selected dice
   setDiceEventListeners: function() {
@@ -56,37 +59,25 @@ var dice = {
     }
   },
 
-  // // This function checks the game state each turn
-  // takeTurn: function() {
-  //
-  // },
-
   // Rolls all dice that have not been selected
   diceRoll: function() {
-    if (turns <= 3) {
-      console.log("diceRoll ran and it is turn: " + turns + " for " + currentPlayer + ".");
 
-      if (turns == 3 && currentPlayer == "Player Two" && round == 5) {
-        console.log("Game Over");
-      } else if (turns == 3) {
-        endOfTurnMessage();
-        setPlayer();
-      } else {
-        rollMessage();
+    var diceToRoll = [];
+    for (var eachDie in diceArray) {
+      var die = this[diceArray[eachDie]];
+      if (!die.classList.contains('selected')) {
+        diceToRoll.push(die);
       }
-
-      var diceToRoll = [];
-      for (var eachDie in diceArray) {
-        var die = this[diceArray[eachDie]];
-        if (!die.classList.contains('selected')) {
-          diceToRoll.push(die);
-        }
-      }
-      for (var i = 0; i < diceToRoll.length; i++) {
-        diceToRoll[i].style.backgroundImage = "url('" + this.roll(diceToRoll[i]) + "')";
-      }
-      turns++;
     }
+    for (var i = 0; i < diceToRoll.length; i++) {
+      diceToRoll[i].style.backgroundImage = "url('" + this.roll(diceToRoll[i]) + "')";
+    }
+    turns++;
+    if (turns == 1 && !dice.diceRolled) {
+      dice.setDiceEventListeners();
+      dice.diceRolled = true;
+    }
+    takeTurn();
   },
 
   // Randomly selects an outcome of each dice roll
@@ -120,19 +111,19 @@ var dice = {
 
     switch (num) {
       case 1:
-        return diceImgs.one;
+        return diceImgs.img1;
         break;
       case 2:
-        return diceImgs.two;
+        return diceImgs.img2;
         break;
       case 3:
-        return diceImgs.three;
+        return diceImgs.img3;
         break;
       case 4:
-        return diceImgs.four;
+        return diceImgs.img4;
         break;
       case 5:
-        return diceImgs.five;
+        return diceImgs.img5;
         break;
       default:
         console.log("Error: the number was not between 1 and 5.");
@@ -140,25 +131,88 @@ var dice = {
   }
 };
 
-function readyGame() {
+function gameReady() {
   dice.rollBtn.addEventListener('click', function() {
     dice.diceRoll();
   });
   dice.endTurnBtn.addEventListener('click', function() {
-    console.log("Player has ended their turn and submitted their dice to be scored.");
+    endTurn();
   });
+  introMessage();
+};
+
+function takeTurn() {
+  console.log("takeTurn ran and it is turn: " + turns + " for " + currentPlayer + ".");
+  if (turns == 3 && currentPlayer == "Player Two" && round == 5) {
+    console.log("Game Over");
+  } else if (turns == 3 && currentPlayer == "Player Two") {
+    endOfTurnMessage();
+    turns = 0;
+    // rollBtn.removeEventListener('click', function() {
+    //   dice.diceRoll();
+    // });
+  } else if (turns == 3) {
+    endOfTurnMessage();
+    turns = 0;
+  } else { // Turns less than three
+    rollMessage();
+  }
+
+};
+
+function endTurn() {
+  if (currentPlayer == 'Player One') {
+    player1Score = calculateScore();
+    document.getElementById('playerOneScore').innerHTML = "<h1>" + player1Score + "</h1>";
+    setPlayer();
+    resetBoard();
+  } else {
+    player2Score = calculateScore();
+    document.getElementById('playerTwoScore').innerHTML = "<h1>" + player1Score + "</h1>";
+    setPlayer();
+    checkRound();
+    resetBoard();
+    round++;
+  }
+  console.log("Player has ended their turn and submitted their dice to be scored.");
+};
+
+function resetBoard() {
+  var count = 1;
+  for (var die in diceArray) {
+    dice[diceArray[die]].classList.remove('selected');
+    dice[diceArray[die]].style.backgroundImage = "url('" + diceImgs['img' + count] + "')";
+    dice['num' + count].innerHTML = "<h1>" + count + "</h1>";
+    count++
+  }
+  turns = 0;
+  introMessage();
+}
+
+function calculateScore() {
+
+}
+
+// This function controls and checks the game state each turn
+function checkRound() {
+  if (round == 5) {
+    resetBoard();
+    var body = document.getElementsByTagName('body')[0];
+    var newBody = body.cloneNode(true);
+    body.replaceChild(newBody, body);
+  }
 };
 
 function setPlayer() {
   if (currentPlayer == 'Player One') {
     currentPlayer = 'Player Two';
-    turns = 0;
-    // resetBoard();
   } else {
     currentPlayer = 'Player One';
-    turns = 0;
-    // resetBoard();
   }
+}
+
+function introMessage() {
+  document.getElementById('messageBoard').innerHTML = "<h3>" + currentPlayer + ", please roll the dice</h3>";
 }
 
 function rollMessage() {
@@ -166,5 +220,5 @@ function rollMessage() {
 };
 
 function endOfTurnMessage() {
-  document.getElementById('messageBoard').innerHTML = "<h3>This was your final roll for this round. It is now the next player\'s turn</h3>";
+  document.getElementById('messageBoard').innerHTML = "<h3>This was your final roll for this round. Click <em>End Turn</em> to calculate your score and pass the turn.</h3>";
 };

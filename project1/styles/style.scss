@@ -8,8 +8,8 @@ $radius: 15px;
 
 body {
   background: linear-gradient(
-    rgba(0, 0, 0, 0.45),
-    rgba(0, 0, 0, 0.45)), url('../images/bkgimg.png');
+    rgba(0, 0, 0, 0.30),
+    rgba(0, 0, 0, 0.40)), url('../images/bkgimg.png');
   background-repeat: no-repeat;
   background-size: cover;
   font-family: $logoFont;
@@ -152,6 +152,7 @@ body {
   color: rgb(35, 189, 204);
   margin: 0 1.66% 0 1.66%;
   text-align: center;
+  text-shadow: -1px 0 $yellow, 0 1px $yellow, 1px 0 $yellow, 0 -1px $yellow;
 }
 
 #scoreboard {
@@ -164,6 +165,10 @@ body {
   border-bottom: $border;
 }
 
+#playerOneScore, #playerTwoScore {
+  color: $yellow;
+}
+
 #messageBoard {
   text-align: center;
   background: rgba(4, 163, 178, 0.9);
@@ -173,6 +178,10 @@ body {
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   border-bottom: $border;
   border-right: $border;
+}
+
+#messageBoard em {
+  color: $foregroundColor;
 }
 
 #messageBoard h3 {
