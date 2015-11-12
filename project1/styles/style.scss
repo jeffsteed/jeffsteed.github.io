@@ -187,3 +187,18 @@ body {
 #messageBoard h3 {
   margin-top: 5%;
 }
+
+.final {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $foregroundColor;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.final h1 {
+  color: $yellow;
+  margin-top: 20%;
+}

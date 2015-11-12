@@ -141,4 +141,17 @@ body {
 #messageBoard h3 {
   margin-top: 5%; }
 
+.final {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 18, 152, 0.8);
+  height: 100%;
+  width: 100%;
+  text-align: center; }
+
+.final h1 {
+  color: #ffe433;
+  margin-top: 20%; }
+
 /*# sourceMappingURL=style.css.map */

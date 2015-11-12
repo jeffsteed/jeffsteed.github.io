@@ -131,6 +131,10 @@ var dice = {
   }
 };
 
+function play() {
+
+};
+
 function gameReady() {
   dice.rollBtn.addEventListener('click', function() {
     dice.diceRoll();
@@ -148,9 +152,6 @@ function takeTurn() {
   } else if (turns == 3 && currentPlayer == "Player Two") {
     endOfTurnMessage();
     turns = 0;
-    // rollBtn.removeEventListener('click', function() {
-    //   dice.diceRoll();
-    // });
   } else if (turns == 3) {
     endOfTurnMessage();
     turns = 0;
@@ -162,13 +163,13 @@ function takeTurn() {
 
 function endTurn() {
   if (currentPlayer == 'Player One') {
-    player1Score = calculateScore();
+    player1Score += calculateScore();
     document.getElementById('playerOneScore').innerHTML = "<h1>" + player1Score + "</h1>";
     setPlayer();
     resetBoard();
   } else {
-    player2Score = calculateScore();
-    document.getElementById('playerTwoScore').innerHTML = "<h1>" + player1Score + "</h1>";
+    player2Score += calculateScore();
+    document.getElementById('playerTwoScore').innerHTML = "<h1>" + player2Score + "</h1>";
     setPlayer();
     checkRound();
     resetBoard();
@@ -190,16 +191,75 @@ function resetBoard() {
 }
 
 function calculateScore() {
+  var count = 1;
+  var scores = [];
 
+  ['dice1Value', 'dice2Value', 'dice3Value', 'dice4Value', 'dice5Value'].forEach(function(prop) {
+    scores.push(dice[prop]);
+  });
+
+  var tally = {
+    '1': 0,
+    '2': 0,
+    '3': 0,
+    '4': 0,
+    '5': 0
+  };
+
+  scores.forEach(function(score) {
+    tally[score.toString()] += 1;
+  });
+
+  var matches = tally['1'];
+
+  while (count < 5) {
+    if (tally[(count + 1).toString()] > matches) {
+      matches = tally[(count + 1).toString()];
+    }
+    count++;
+  }
+
+  if (matches == 5) {
+    return 100;
+  } else if (matches == 4) {
+    return 30;
+  } else if (matches == 3) {
+    return 20;
+  } else if (matches == 2) {
+    return 10;
+  } else {
+    return 0;
+  }
 }
+
 
 // This function controls and checks the game state each turn
 function checkRound() {
   if (round == 5) {
     resetBoard();
-    var body = document.getElementsByTagName('body')[0];
-    var newBody = body.cloneNode(true);
-    body.replaceChild(newBody, body);
+    // var body = document.getElementsByTagName('body')[0];
+    // console.log(body);
+    // var newBody = body.cloneNode(true);
+    // console.log(newBody);
+    // body.parentNode.replaceChild(newBody, body);
+
+    var winner = "Player One Wins!";
+    if (player2Score > player1Score) {
+      winner = "Player Two Wins!";
+    } else if (player2Score == player1Score) {
+      winner = "Player One and Player Two tied!";
+    }
+    var final = document.createElement('div');
+    final.innerHTML = "<h1>" + winner + "</h1>";
+    final.className = 'final';
+    document.getElementsByTagName('body')[0].appendChild(final);
+    final.addEventListener('click', function() {
+      final.style.display = 'none';
+    });
+    player1Score = 0;
+    player2Score = 0;
+    document.getElementById('playerOneScore').innerHTML = "<h1>" + player1Score + "</h1>";
+    document.getElementById('playerTwoScore').innerHTML = "<h1>" + player2Score + "</h1>";
   }
 };
 
@@ -222,3 +282,7 @@ function rollMessage() {
 function endOfTurnMessage() {
   document.getElementById('messageBoard').innerHTML = "<h3>This was your final roll for this round. Click <em>End Turn</em> to calculate your score and pass the turn.</h3>";
 };
+
+function yakuzee() {
+  console.log("YAKUZ-EE!!!");
+}
