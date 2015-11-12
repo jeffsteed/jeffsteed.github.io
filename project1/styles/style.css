@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("http://img11.deviantart.net/9ce1/i/2005/200/8/2/yakuza_irezumi_by_kyodai.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/bkgimg.png");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Shojumaru", cursive;
@@ -15,6 +15,9 @@ body {
   text-align: center;
   border-radius: 0 0 15px 15px;
   font-weight: bolder;
+  border-bottom: 2px solid #ffe433;
+  border-right: 2px solid #ffe433;
+  border-left: 2px solid #ffe433;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   font-family: "Shojumaru", cursive;
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15); }
@@ -29,7 +32,10 @@ body {
 #gameboard {
   height: 280px;
   background-color: rgba(255, 18, 152, 0.8);
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); }
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-top: 2px solid #ffe433;
+  border-left: 2px solid #ffe433;
+  border-right: 2px solid #ffe433; }
 
 #diceholder {
   height: 100%;
@@ -60,33 +66,44 @@ body {
   text-align: center;
   height: 60px;
   width: 200px;
-  background-color: rgba(255, 18, 152, 0.8); }
+  background-color: rgba(255, 18, 152, 0.8);
+  color: #ffe433;
+  border: 2px solid #ffe433; }
+
+#end-turn {
+  margin: 0 auto;
+  text-align: center;
+  height: 60px;
+  width: 200px;
+  background-color: rgba(255, 18, 152, 0.8);
+  color: #ffe433;
+  border: 2px solid #ffe433; }
 
 .selected {
   border: 20px solid #ffe433; }
 
 #dice1 {
-  background-image: url("http://www.booksandwands.com/images/ChineseOne.bmp");
+  background-image: url("../images/ChineseOne.bmp");
   background-repeat: no-repeat;
   background-position: center; }
 
 #dice2 {
-  background-image: url("http://www.booksandwands.com/images/ChineseTwo.bmp");
+  background-image: url("../images/ChineseTwo.bmp");
   background-repeat: no-repeat;
   background-position: center; }
 
 #dice3 {
-  background-image: url("http://www.booksandwands.com/images/ChineseThree.bmp");
+  background-image: url("../images/ChineseThree.bmp");
   background-repeat: no-repeat;
   background-position: center; }
 
 #dice4 {
-  background-image: url("http://www.booksandwands.com/images/ChineseFour.bmp");
+  background-image: url("../images/ChineseFour.bmp");
   background-repeat: no-repeat;
   background-position: center; }
 
 #dice5 {
-  background-image: url("http://www.booksandwands.com/images/ChineseFive.bmp");
+  background-image: url("../images/ChineseFive.bmp");
   background-repeat: no-repeat;
   background-position: center; }
 
@@ -100,7 +117,9 @@ body {
   height: 200px;
   color: rgba(255, 18, 152, 0.8);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); }
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-left: 2px solid #ffe433;
+  border-bottom: 2px solid #ffe433; }
 
 #messageBoard {
   text-align: center;
@@ -108,7 +127,9 @@ body {
   height: 200px;
   color: #ffe433;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); }
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid #ffe433;
+  border-right: 2px solid #ffe433; }
 
 #messageBoard h3 {
   margin-top: 5%; }

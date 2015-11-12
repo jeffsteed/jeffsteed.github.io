@@ -3,9 +3,8 @@ window.onload = function() {
   // dice.diceRoll();
   dice.setDiceEventListeners();
   document.getElementById('messageBoard').innerHTML = "<h3>Player One, please roll the dice</h3>";
-  document.getElementById('roll-dice').addEventListener('click', function() {
-    dice.diceRoll();
-  });
+
+  readyGame();
 
 };
 
@@ -15,11 +14,11 @@ var currentPlayer = 'Player One';
 var diceArray = ['dice1', 'dice2', 'dice3', 'dice4', 'dice5'];
 
 var diceImgs = {
-  one: 'http://www.booksandwands.com/images/ChineseOne.bmp',
-  two: 'http://www.booksandwands.com/images/ChineseTwo.bmp',
-  three: 'http://www.booksandwands.com/images/ChineseThree.bmp',
-  four: 'http://www.booksandwands.com/images/ChineseFour.bmp',
-  five: 'http://www.booksandwands.com/images/ChineseFive.bmp'
+  one: 'images/ChineseOne.bmp',
+  two: 'images/ChineseTwo.bmp',
+  three: 'images/ChineseThree.bmp',
+  four: 'images/ChineseFour.bmp',
+  five: 'images/ChineseFive.bmp'
 }
 
 var dice = {
@@ -33,6 +32,8 @@ var dice = {
   num3: document.getElementById('num3'),
   num4: document.getElementById('num4'),
   num5: document.getElementById('num5'),
+  rollBtn: document.getElementById('roll-dice'),
+  endTurnBtn: document.getElementById('end-turn'),
   dice1Value: null,
   dice2Value: null,
   dice3Value: null,
@@ -137,6 +138,15 @@ var dice = {
         console.log("Error: the number was not between 1 and 5.");
     }
   }
+};
+
+function readyGame() {
+  dice.rollBtn.addEventListener('click', function() {
+    dice.diceRoll();
+  });
+  dice.endTurnBtn.addEventListener('click', function() {
+    console.log("Player has ended their turn and submitted their dice to be scored.");
+  });
 };
 
 function setPlayer() {
