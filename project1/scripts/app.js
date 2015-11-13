@@ -231,6 +231,7 @@ function calculateScore() {
   if (tally['1'] == 1 && tally['2'] == 1 && tally['3'] == 1 && tally['4'] == 1 && tally['5'] == 1) {
     return 40;
   } else if (matches == 5) {
+    yakuzee();
     return 100;
   } else if (matches == 4) {
     return 30;
@@ -267,18 +268,23 @@ function checkRound() {
     // body.parentNode.replaceChild(newBody, body);
 
     var winner = "Player One Wins!";
+    var score = player1Score;
     if (player2Score > player1Score) {
       winner = "Player Two Wins!";
+      score = player2Score;
     } else if (player2Score == player1Score) {
       winner = "Player One and Player Two tied!";
     }
     var final = document.createElement('div');
-    final.innerHTML = "<h1>" + winner + "</h1>";
+    final.innerHTML = "<h1>" + winner + "<br>with " + score + " points!</h1>";
     final.className = 'final';
     document.getElementsByTagName('body')[0].appendChild(final);
-    final.addEventListener('click', function() {
-      final.style.display = 'none';
-    });
+    // final.addEventListener('click', function() {
+    //   final.style.display = 'none';
+    //   round = 1;
+    //   turns = -1;
+    //   gameReady();
+    // });
     player1Score = 0;
     player2Score = 0;
     document.getElementById('playerOneScore').innerHTML = "<h1>" + player1Score + "</h1>";
