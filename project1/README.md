@@ -13,3 +13,5 @@ A Japanese themed Yahtzee style game.
 When time permits, I would like to add additional features and animations to enhance the game experience.
 
 ![Yakuz-ee Image](images/screenshot.png)
+
+[Link to the site](jeffsteed.github.io/project1)
