@@ -9,3 +9,7 @@ A Japanese themed Yahtzee style game.
 * CSS/Sass
 * JavaScript/jQuery
 * Bootstrap
+
+When time permits, I would like to add additional features and animations to enhance the game experience.
+
+![Yakuz-ee Image](/images/screenshot.png)
