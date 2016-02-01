@@ -23,4 +23,4 @@ When time permits, I would like to add additional features and animations to enh
 
 ![Yakuz-ee Image](images/screenshot.png)
 
-[Link to the site](jeffsteed.github.io/project1)
+[Link to the site](http://jeffsteed.github.io/project1)
